@@ -1,0 +1,339 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+.title-highlight{
+	width: 100%;
+
+	margin: 0px;  
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  
+}
+
+.slider{
+	width: 800px;
+	height: 500px;
+	border-radius: 10px;
+	overflow: hidden;
+	
+}
+
+.slides{
+	width: 500%;
+	height: 500px;
+	display: flex;
+	
+	
+}
+
+.slides input{
+	display: none;
+}
+
+.slide{
+	width: 20%;
+	transition: 2s;
+
+	
+}
+
+.slide img{
+	justify-content: center;
+	width: 800px;
+	height: 500px;
+	
+}
+
+.navigation-manual{
+	position: absolute;
+	width: 800px;
+	margin-top: -40px;
+	display: flex;
+	justify-content: center;
+}
+
+.manual-btn{
+	border: 2px solid #bccac4;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+	margin-right: 40px;
+}
+
+.manual-btn:hover{
+	background: #bccac4;
+}
+
+#radio1:checked ~ .first{
+	margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+	margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+	margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+	margin-left: -60%;
+}
+
+.navigation-auto{
+	position: absolute;
+	display: flex;
+	width: 800px;
+	justify-content: center;
+	margin-top: 460px;
+}
+
+.navigation-auto div{
+	border: 2px solid #bccac4;
+	padding: 5px;
+	border-radius: 10px;
+	transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+	margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+	background: #bccac4;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+	background: #bccac4;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+	background: #bccac4;
+}
+
+
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+	background: #bccac4;
+}
+
+
+/*This is where footer and header CSS start */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Rubik', sans-serif;
+}
+
+.selectMed a{
+	background-color:rgba(81, 116, 112, 1);
+	padding: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	color: white;
+}
+
+.selHo:hover{
+	background-color:rgba(255, 255, 255, 0.8);
+	padding: 6px;
+	padding-left: 11px;
+	padding-right: 11px;
+
+} 
+
+header
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.6s;
+	padding: 20px 50px;
+	z-index: 100000;
+}
+
+header.sticky
+{
+	padding: 5px 70px;
+	background: #bccac4;
+}
+
+header logo {
+	cursor: pointer;
+}
+
+header.sticky.logo {
+	width: 20%;
+  height: 20%;
+}
+
+header ul
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header ul li
+{
+	position: relative;
+	list-style: none;
+}
+
+header ul li a
+{
+	position: relative;
+	margin: 0 15px;
+	text-decoration: none;
+	color: #000000;
+	letter-spacing: 3px;
+	font-size: 20px;
+	font-weight: 2000px;
+	transition: 0.6s;
+}
+
+.banner
+{
+	position: relative;
+	width: 100%;
+	height: 45vh;
+	background: url("../image/greeBG.png");
+	background-size: inherit;
+    background-position-y: -600px;
+}
+
+
+button {
+	font-family: 'Rubik', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+button {
+	padding: 9px 25px;
+	background-color: rgba(37, 71, 67,1);
+	border: none;
+	border-radius: 15px;
+	cursor: pointer;
+	transition:  all 0.3s ease 0s;
+}
+
+button:hover {
+	background-color: rgba(37, 71, 67,0.8);
+}
+
+
+
+.foot{
+	width: 100%;
+	height: auto;
+	margin-bottom: -8px;
+	margin-top: -15px;
+}
+
+a
+{text-decoration-line: none;}
+
+.feet
+{
+	background: #4e6f6c;
+	color: white;
+	font-size: 15px;
+	padding-left: 45px;
+	padding-right: 45px;
+	
+}
+
+.flex.flex-wrap.w-4\/4.md\:w-full.body-text-2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.rowcol{
+	width: 250px;
+	display: inline-grid;
+}
+
+.rowcol ul li a{
+	color: white;
+	font-weight: 50;
+	list-style-type:none;
+}
+
+.rowcol i{
+	color: white;
+	size: 125%
+}
+
+.column-title
+{
+	font-size: 21px;
+	line-height: 2;
+}
+
+.custom {
+    justify-content: center;
+    color: black;
+}
+
+.tiny
+{
+	padding: 15px;
+	text-align: center;
+	border-top-style: solid;
+	border-color: white;
+	color: white;
+	font-weight: 50px;
+	background: #4e6f6c;
+}
+
+/*This is where footer and header CSS end*/
+
+
+form
+{
+	border: 10px solid white;
+	font-size: 20px;
+	margin-top: -65px;
+	margin-left: 200px;
+	margin-right: 200px;
+	padding: 60px;
+	background-color: #ffffff;
+  	border-radius: 50px;
+}
+
+.selHoM
+{
+	border-spacing: 5px;
+    display: inline-table;
+    border: 5px solid black;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 24.6%;
+    text-align: center;
+    -webkit-text-stroke-width: medium;
+    font-size: xxx-large;
+    height: 260px;
+    
+}
+
+.selHoM a {
+    color: black;
+}
+
