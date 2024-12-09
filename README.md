@@ -36,10 +36,10 @@ Doc UiTM is a web application that facilitates appointment booking at UiTM clini
 4. Run the application in Eclipse or deploy it to a server with Apache Tomcat or any other suitable web server.
    
 ## Collaborators
-Nur Amielia Natasha Binti Mohamad Nazli
-Nur Eisyah Farihah Binti Mohd Dali
-Muhammad Taufeeq Hasnol
-Aisyah Husna Jais
+ - Nur Amielia Natasha Binti Mohamad Nazli
+ - Nur Eisyah Farihah Binti Mohd Dali
+ - Muhammad Taufeeq Hasnol
+ - Aisyah Husna Jais
 
 ## Feedback and Support
 
